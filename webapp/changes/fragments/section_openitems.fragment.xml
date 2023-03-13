@@ -1,0 +1,139 @@
+<!-- Use stable and unique IDs!-->
+
+<core:FragmentDefinition xmlns:core='sap.ui.core'
+
+   xmlns:uxap='sap.uxap'
+
+   xmlns='sap.m'
+
+   xmlns:table="sap.ui.table"
+
+   xmlns:mvc="sap.ui.core.mvc"
+
+   xmlns:u="sap.ui.unified"
+
+   xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+   xmlns:smartForm="sap.ui.comp.smartform" 
+	xmlns:smartField="sap.ui.comp.smartfield"
+
+   xmlns:smartTable="sap.ui.comp.smarttable"
+
+   xmlns:html="http://www.w3.org/1999/xhtml"
+
+   xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+
+   controllerName="customer.zz1mangcreacctext.OpenItems" height="100%">
+
+   <uxap:ObjectPageSection  id="sample.Id" title="Purchase Organizations" titleUppercase="false">
+
+      <uxap:subSections>
+
+         <uxap:ObjectPageSubSection id="idOpen_Items" title="Purch. Orgs.">
+
+            <uxap:blocks>
+
+               <!-- <Text text="hello33243" id="ext2" /> -->
+			   	<smartTable:SmartTable id="LineItemsSmartTable" useExportToExcel="false"
+               entitySet="C_Supplierpurchasingorg"   tableType="ResponsiveTable" 
+               enableAutoBinding="true" 	demandPopin="true"  editable = "false" tableBindingPath="to_Supplierpurchasingorg">
+				<!-- layout data used to make the table growing but the filter bar fixed -->
+				
+			</smartTable:SmartTable>
+
+            </uxap:blocks>
+
+         </uxap:ObjectPageSubSection>
+
+      </uxap:subSections>
+
+   </uxap:ObjectPageSection>
+   <uxap:ObjectPageSection  id="idSupplAddress" title="Supplier Address" titleUppercase="false">
+
+      <uxap:subSections>
+
+         <uxap:ObjectPageSubSection id="idSuppAddList" title="Supplier Address">
+
+            <uxap:blocks>
+
+               <!-- <Text text="hello33243" id="ext2" /> -->
+			   	<!-- <smartTable:SmartTable id="idSuppAddTable" 
+               entitySet="C_SupplierAddress"   tableType="ResponsiveTable" 
+               enableAutoBinding="true" editable = "false" tableBindingPath="to_SupplierAddress"> -->
+				<!-- layout data used to make the table growing but the filter bar fixed -->
+				
+			<!-- </smartTable:SmartTable> -->
+   <smartForm:SmartForm 
+				id="smartForm"
+
+				flexEnabled="true" >
+				<smartForm:Group id="g1"  expanded="true" >
+             <smartForm:GroupElement id="e8">
+						<smartField:SmartField id="id8s" value="{to_SupplierAddress/BusinessPartner}" />
+					</smartForm:GroupElement>
+                <smartForm:GroupElement id="e9">
+						<smartField:SmartField visible="false" id="id9s" value="{to_SupplierAddress/BusinessPartnerAddressID}" />
+					</smartForm:GroupElement>
+            <smartForm:GroupElement id="e1">
+						<smartField:SmartField id="id1s" value="{to_SupplierAddress/AddressID}" />
+					</smartForm:GroupElement>
+               <smartForm:GroupElement id="e2">
+						<smartField:SmartField id="id2s" value="{to_SupplierAddress/CityName}" />
+					</smartForm:GroupElement>
+               <smartForm:GroupElement id="e3"  >
+						<smartField:SmartField id="id3s" textLabel="Email" value="{to_SupplierAddress/EmailAddress}" />
+					</smartForm:GroupElement> 
+                 <smartForm:GroupElement id="e4" >
+						<smartField:SmartField id="id4s" textLabel="International Phone Number" value="{to_SupplierAddress/InternationalPhoneNumber}" />
+					</smartForm:GroupElement>
+                  <smartForm:GroupElement id="e5" >
+						<smartField:SmartField id="id5s" textLabel="International Mobile Number" value="{to_SupplierAddress/InternationalMobilePhoneNumber}" />
+					</smartForm:GroupElement>  
+                 <smartForm:GroupElement id="e6" >
+						<smartField:SmartField id="id6s" textLabel="International Fax Number" value="{to_SupplierAddress/InternationalFaxNumber}" />
+					</smartForm:GroupElement>
+                <smartForm:GroupElement id="e7" >
+						<smartField:SmartField id="id7s" value="{to_SupplierAddress/Country}" />
+					</smartForm:GroupElement>
+					<!-- <smartForm:GroupElement>
+						<smartField:SmartField id="id1s" value="{AddressID}" />
+					</smartForm:GroupElement>
+					<smartForm:GroupElement>
+						<smartField:SmartField id="id2s" value="{CityName}" />
+					</smartForm:GroupElement>
+					<smartForm:GroupElement elementForLabel="1">
+						<smartField:SmartField id="id4s" value="{EmailAddress}" />
+					</smartForm:GroupElement> -->
+					<!-- <smartForm:GroupElement>
+						<smartField:SmartField value="{Price}" />
+					</smartForm:GroupElement> -->
+				</smartForm:Group>
+				<smartForm:Group id="g2" label="Supplier">
+					<!-- <smartForm:GroupElement>
+						<smartField:SmartField value="{SupplierName}" />
+					</smartForm:GroupElement> -->
+				</smartForm:Group>
+			</smartForm:SmartForm>
+            </uxap:blocks>
+
+         </uxap:ObjectPageSubSection>
+
+      </uxap:subSections>
+
+   </uxap:ObjectPageSection>
+    <uxap:ObjectPageSection id="parterFunctionSection" title="Partner Functions" titleUppercase="false">
+        <uxap:subSections>
+            <uxap:ObjectPageSubSection id="parterFunctionSubSection" title="Partner Functions">
+                <uxap:blocks>
+                    <!-- <Text text="hello33243" id="ext2" /> -->
+                    <smartTable:SmartTable
+                        id="BusinessPartner1"  useExportToExcel="false" beforeRebindTable=".extension.customer.z.mdm.cmd.supplier.ops1.a1.customGeneralInformation.onBeforeRebindTableForPartnerFunction" tableType="ResponsiveTable"
+                         initiallyVisibleFields="PartnerFunction,ReferenceSupplier,PartnerName,DefaultPartner" showRowCount="false" enableAutoBinding="true"
+                         requestAtLeastFields="PartnerFunction,PartnerFunction_Text,BusinessPartner,ReferenceSupplier,PartnerName" demandPopin="true" editable="false"><!-- layout data used to make the table growing but the filter bar fixed -->
+                    </smartTable:SmartTable>
+                </uxap:blocks>
+            </uxap:ObjectPageSubSection>
+        </uxap:subSections>
+    </uxap:ObjectPageSection>
+   
+
+</core:FragmentDefinition>

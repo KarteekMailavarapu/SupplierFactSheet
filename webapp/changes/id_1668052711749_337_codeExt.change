@@ -1,0 +1,34 @@
+{
+	"fileName": "id_1668052711749_337_codeExt",
+	"fileType": "change",
+	"changeType": "codeExt",
+	"moduleName": "customer/z/mdm/cmd/supplier/ops1/a1/changes/coding/customGeneralInformation",
+	"reference": "customer.z.mdm.cmd.supplier.ops1.a1",
+	"packageName": "$TMP",
+	"content": {
+		"codeRef": "coding/customGeneralInformation.js"
+	},
+	"selector": {
+		"controllerName": "sap.suite.ui.generic.template.ObjectPage.view.Details"
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/mdm.cmd.supplier.ops1/changes/",
+	"projectId": "customer.z.mdm.cmd.supplier.ops1.a1",
+	"creation": "2022-11-10T03:58:31.752Z",
+	"originalLanguage": "EN",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.84.19",
+		"sourceChangeFileName": "",
+		"compositeCommand": "",
+		"command": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

@@ -1,0 +1,46 @@
+{
+	"fileName": "id_1668052651575_335_addGroup",
+	"fileType": "change",
+	"changeType": "addGroup",
+	"moduleName": "",
+	"reference": "customer.z.mdm.cmd.supplier.ops1.a1",
+	"packageName": "$TMP",
+	"content": {
+		"group": {
+			"index": 1,
+			"selector": {
+				"id": "mdm.cmd.supplier.ops1::sap.suite.ui.generic.template.ObjectPage.view.Details::C_SupplierFs--id-1668052651571-334",
+				"idIsLocal": false
+			}
+		}
+	},
+	"selector": {
+		"id": "mdm.cmd.supplier.ops1::sap.suite.ui.generic.template.ObjectPage.view.Details::C_SupplierFs--24196::Form",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {
+		"groupLabel": {
+			"value": "New: Group",
+			"type": "XFLD"
+		}
+	},
+	"namespace": "apps/mdm.cmd.supplier.ops1/changes/",
+	"projectId": "customer.z.mdm.cmd.supplier.ops1.a1",
+	"creation": "2022-11-10T03:57:37.071Z",
+	"originalLanguage": "EN",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.84.19",
+		"sourceChangeFileName": "",
+		"compositeCommand": "",
+		"command": "createContainer"
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

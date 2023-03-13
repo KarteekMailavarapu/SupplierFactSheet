@@ -1,0 +1,40 @@
+{
+	"fileName": "id_1668052660847_336_renameGroup",
+	"fileType": "change",
+	"changeType": "renameGroup",
+	"moduleName": "",
+	"reference": "customer.z.mdm.cmd.supplier.ops1.a1",
+	"packageName": "$TMP",
+	"content": {
+		"originalControlType": "sap.ui.comp.smartform.Group"
+	},
+	"selector": {
+		"id": "mdm.cmd.supplier.ops1::sap.suite.ui.generic.template.ObjectPage.view.Details::C_SupplierFs--id-1668052651571-334",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {
+		"groupLabel": {
+			"value": "Custom Section",
+			"type": "XFLD"
+		}
+	},
+	"namespace": "apps/mdm.cmd.supplier.ops1/changes/",
+	"projectId": "customer.z.mdm.cmd.supplier.ops1.a1",
+	"creation": "2022-11-10T04:00:27.465Z",
+	"originalLanguage": "EN",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.84.19",
+		"sourceChangeFileName": "",
+		"compositeCommand": "",
+		"command": "rename"
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

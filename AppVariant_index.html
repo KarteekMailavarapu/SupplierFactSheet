@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Adaptation Project Preview</title>
+
+	<style>
+		/* hide variant management popover footer */
+		.sapUiFlVarMngmtPopover .sapMPageWithFooter>section { bottom: 0 !important; }
+		.sapUiFlVarMngmtPopover .sapMPageFooter, .sapUICompVarMngmtPopover .sapMPageFooter { display: none !important; }
+	</style>
+	
+	<script type="text/javascript">
+		window["sap-ushell-config"] = {
+			defaultRenderer : "fiori2",
+			renderers: {
+				fiori2: {
+					componentData: {
+						config: {
+							appState: "headerless",
+							rootIntent: "adaptationproject-display"
+						}
+					}
+				}
+			},
+			applications: {
+				"adaptationproject-display": {
+					title: "Adaptation Project Preview",
+					additionalInformation: "SAPUI5.Component=mdm.cmd.supplier.ops1",
+					applicationType: "URL",
+					applicationDependencies: {"name":"mdm.cmd.supplier.ops1","url":"/sap/bc/ui5_ui5/sap/md_supplierss1/~7CE281DA49E51997AC434808C84B86C6~5","manifest":{"_version":"1.7.0","sap.app":{"_version":"1.1.0","id":"customer.z.mdm.cmd.supplier.ops1.a1","type":"application","i18n":"i18n/i18n.properties","applicationVersion":{"version":"8.0.1"},"title":"Supplier","description":"Supplier","tags":{"keywords":[]},"ach":"LO-MD-BP","dataSources":{"mainService":{"uri":"/sap/opu/odata/sap/C_SUPPLIER_FS_SRV/","type":"OData","settings":{"annotations":["C_SUPPLIER_FS_ANNO_MDL","localAnnotations"],"localUri":"localService/metadata.xml"}},"C_SUPPLIER_FS_ANNO_MDL":{"uri":"/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='C_SUPPLIER_FS_ANNO_MDL',Version='0001')/$value/","type":"ODataAnnotation","settings":{"localUri":"localService/C_SUPPLIER_FS_ANNO_MDL.xml"}},"localAnnotations":{"uri":"annotations/annotations.xml","type":"ODataAnnotation","settings":{"localUri":"annotations/annotations.xml"}}},"offline":false,"resources":"resources.json","sourceTemplate":{"id":"ui5template.smarttemplate","version":"1.0.0"}},"sap.ui":{"_version":"1.1.0","technology":"UI5","icons":{"icon":"","favIcon":"","phone":"","phone@2":"","tablet":"","tablet@2":""},"deviceTypes":{"desktop":true,"tablet":true,"phone":true},"supportedThemes":["sap_hcb","sap_bluecrystal"]},"sap.ui5":{"_version":"1.1.0","resources":{"js":[],"css":[{"uri":"css/app.css"}]},"dependencies":{"minUI5Version":"1.78.4","libs":{"sap.ui.core":{"lazy":false},"sap.m":{"lazy":false},"sap.ui.comp":{"lazy":false},"sap.uxap":{"lazy":false},"sap.suite.ui.generic.template":{"lazy":false},"sap.ui.generic.app":{"lazy":false},"sap.ui.layout":{"lazy":false},"sap.viz":{"lazy":false}},"components":{}},"models":{"i18n":{"preload":false,"type":"sap.ui.model.resource.ResourceModel","uri":"i18n/i18n.properties"},"@i18n":{"preload":false,"type":"sap.ui.model.resource.ResourceModel","uri":"i18n/i18n.properties"},"i18n|sap.suite.ui.generic.template.ListReport|C_SupplierFs":{"preload":false,"type":"sap.ui.model.resource.ResourceModel","uri":"i18n/ListReport/C_SupplierFs/i18n.properties","settings":{"enhanceWith":[{"bundleUrl":"i18n/ListReport/C_SupplierFs/i18n.properties","bundleUrlRelativeTo":"manifest"}]}},"i18n|sap.suite.ui.generic.template.ObjectPage|C_SupplierFs":{"preload":false,"type":"sap.ui.model.resource.ResourceModel","uri":"i18n/ObjectPage/C_SupplierFs/i18n.properties","settings":{"enhanceWith":[{"bundleUrl":"i18n/ObjectPage/C_SupplierFs/i18n.properties","bundleUrlRelativeTo":"manifest"}]}},"":{"preload":true,"dataSource":"mainService","settings":{"defaultBindingMode":"TwoWay","defaultCountMode":"Inline","refreshAfterChange":false}}},"extends":{"extensions":{"sap.ui.viewExtensions":{"sap.suite.ui.generic.template.ObjectPage.view.Details":{"ReplaceFacet|C_SupplierFs|PurchaseRequisitionItemTypes":{"className":"sap.ui.core.mvc.View","viewName":"mdm.cmd.supplier.ops1.ext.view.RequisitionItemTypes","type":"XML","sap.ui.generic.app":{"title":"Purchase Requisition Item Types","enableLazyLoading":true}},"ReplaceFacet|C_SupplierFs|PurchaseContractSpend":{"className":"sap.ui.core.mvc.View","viewName":"mdm.cmd.supplier.ops1.ext.view.ContractSpend","type":"XML","sap.ui.generic.app":{"title":"{{@i18n>ContractSpend}}","enableLazyLoading":true}},"ReplaceFacet|C_SupplierFs|PurchasingSpend":{"className":"sap.ui.core.mvc.View","viewName":"mdm.cmd.supplier.ops1.ext.view.PurchasingSpend","type":"XML","sap.ui.generic.app":{"title":"{{@PurchasingSpend}}","enableLazyLoading":true}},"ReplaceFacet|C_SupplierFs|SupplierEvaluation":{"className":"sap.ui.core.mvc.View","viewName":"mdm.cmd.supplier.ops1.ext.view.SupplierEvaluation","type":"XML","sap.ui.generic.app":{"title":"{{@SupplierEvaluation}}","enableLazyLoading":true}}}}}},"contentDensities":{"compact":true,"cozy":true},"componentName":"mdm.cmd.supplier.ops1","appVariantId":"customer.z.mdm.cmd.supplier.ops1.a1","appVariantIdHierarchy":[{"appVariantId":"mdm.cmd.supplier.ops1.Component","layer":"VENDOR","version":"8.0.1"}]},"sap.ui.generic.app":{"_version":"1.1.0","pages":[{"entitySet":"C_SupplierFs","component":{"name":"sap.suite.ui.generic.template.ListReport","list":true},"pages":[{"entitySet":"C_SupplierFs","component":{"name":"sap.suite.ui.generic.template.ObjectPage","settings":{"showRelatedApps":true}}}]}]},"sap.platform.abap":{"_version":"1.1.0","uri":"/sap/bc/ui5_ui5/sap/md_supplierss1"},"sap.platform.hcp":{"_version":"1.1.0","uri":""},"sap.fiori":{"_version":"1.1.0","registrationIds":["F0354"],"archeType":"transactional"}},"self":{"name":"mdm.cmd.supplier.ops1","url":"/sap/bc/ui5_ui5/sap/md_supplierss1/~7CE281DA49E51997AC434808C84B86C6~5"},"asyncHints":{"libs":[{"name":"sap.viz"},{"name":"sap.ui.layout"},{"name":"sap.ui.generic.app"},{"name":"sap.suite.ui.generic.template"},{"name":"sap.uxap"},{"name":"sap.ui.comp"},{"name":"sap.m"},{"name":"sap.ui.core"}],"requests":[{"name":"sap.ui.fl.changes","reference":"customer.z.mdm.cmd.supplier.ops1.a1","preview":{"maxLayer":"PARTNER","reference":"mdm.cmd.supplier.ops1.Component"}}]},"altManifestUrl":"webapp/manifest.appdescr_variant","componentData":{"startupParameters":{"sap-ui-fl-max-layer":["CUSTOMER_BASE"]}}}
+				}
+			}
+		};
+	</script>
+
+	<script src="../../1.108.0/test-resources/sap/ushell/bootstrap/sandbox.js" id="sap-ushell-bootstrap"></script>
+
+	<script id="sap-ui-bootstrap"
+			src="../../1.108.0/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.ushell, sap.ui.rta"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-xx-bindingSyntax="complex"
+			data-sap-ui-xx-rootComponentNode="content"
+			data-sap-ui-xx-designMode="true"
+			data-sap-ui-flexibilityServices='[{"connector": "LrepConnector", "layers": [], "url": "/sap/bc/lrep"},{"applyConnector": "WorkspaceApplyConnector", "writeConnector": "WorkspaceWriteConnector", "custom": true, "layers": ["CUSTOMER_BASE"]}]'
+			data-sap-ui-xx-suppressDeactivationOfControllerCode="true">
+	</script>
+
+	<script type="text/javascript">
+		sap.ui.getCore().attachInit(function() {
+			sap.ushell.Container.createRenderer().placeAt("content");
+		});
+	</script>
+
+	<script src="https://port8888-workspaces-ws-928l4.ap10.applicationstudio.cloud.sap/watt/resources/sap/watt/lib/lodash/lodash.js" type="text/javascript"></script>
+	<script src="https://port8888-workspaces-ws-928l4.ap10.applicationstudio.cloud.sap/features/SAP.ui5-visual-editor-vscode/1.0.96/sap.watt.saptoolsets.fiori.project.uiadaptationfeature/client/v1.0.96_1676989694913/src/uiadaptation/util/UIAdaptationTransceiver.js" type="text/javascript"></script>
+	<script src="https://port8888-workspaces-ws-928l4.ap10.applicationstudio.cloud.sap/features/SAP.ui5-visual-editor-vscode/1.0.96/sap.watt.saptoolsets.fiori.project.uiadaptationfeature/client/v1.0.96_1676989694913/src/uiadaptation/util/AppVariantPreviewHelper.js" type="text/javascript"></script>
+
+</head>
+
+<body class="sapUiBody" id="content" role="application">
+</body>
+
+</html>

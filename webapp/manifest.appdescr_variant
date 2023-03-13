@@ -1,0 +1,62 @@
+{
+  "fileName": "manifest",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "appdescr_variant",
+  "reference": "mdm.cmd.supplier.ops1",
+  "id": "customer.z.mdm.cmd.supplier.ops1.a1",
+  "namespace": "apps/mdm.cmd.supplier.ops1/appVariants/customer.z.mdm.cmd.supplier.ops1.a1/",
+  "content": [
+    {
+      "changeType": "appdescr_ui5_addNewModel",
+      "content": {
+        "dataSource": {
+        "customer.EXT_MATERIAL": {
+            "uri": "/sap/opu/odata/sap/ZEXT_C_SUPPLIER_FS_SRV/",
+            "type": "OData",
+            "settings": {
+                "odataVersion": "2.0",
+                "annotations": []
+            }
+        }
+    },
+    "model": 
+    {
+        "customer.NEW_MODEL": {
+            "dataSource": "customer.EXT_MATERIAL",
+            "settings": {
+              
+            }
+        }
+    }
+  }
+     
+    }
+  ,
+    {
+      "changeType": "appdescr_app_setTitle",
+      "content": {},
+      
+      "texts": {
+        "i18n": "i18n/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "i18n|sap.suite.ui.generic.template.ListReport|C_SupplierFs"
+      },
+      "texts": {
+        "i18n": "i18n/ListReport/C_SupplierFs/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "i18n|sap.suite.ui.generic.template.ObjectPage|C_SupplierFs"
+      },
+      "texts": {
+        "i18n": "i18n/ObjectPage/C_SupplierFs/i18n.properties"
+      }
+    }
+  ]
+}

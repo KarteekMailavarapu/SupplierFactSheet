@@ -1,0 +1,13 @@
+<!-- Use stable and unique IDs!-->
+<core:FragmentDefinition xmlns:core='sap.ui.core' xmlns='sap.m' xmlns:ux="sap.uxap">
+	<!--  add your xml here -->
+		<ux:ObjectPageSection titleUppercase="false" title="All examples">
+	<ux:ObjectPageSubSection title="No Expand/Collapse"
+										  mode="Expanded"
+										  titleUppercase="false">
+						<ux:blocks>
+	
+	</ux:blocks>
+					</ux:ObjectPageSubSection>
+						</ux:ObjectPageSection>
+</core:FragmentDefinition>

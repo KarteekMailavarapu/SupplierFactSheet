@@ -1,0 +1,37 @@
+{
+	"fileName": "id_1670827462777_201_propertyChange",
+	"fileType": "change",
+	"changeType": "propertyChange",
+	"moduleName": "",
+	"reference": "customer.z.mdm.cmd.supplier.ops1.a1",
+	"packageName": "$TMP",
+	"content": {
+		"property": "label",
+		"newValue": ""
+	},
+	"selector": {
+		"id": "mdm.cmd.supplier.ops1::sap.suite.ui.generic.template.ObjectPage.view.Details::C_SupplierFs--com.sap.vocabularies.UI.v1.FieldGroup::CommunicationData::FormGroup",
+		"type": "sap.ui.comp.smartform.Group",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/mdm.cmd.supplier.ops1/changes/",
+	"projectId": "customer.z.mdm.cmd.supplier.ops1.a1",
+	"creation": "2022-12-12T06:44:23.706Z",
+	"originalLanguage": "EN",
+	"support": {
+		"generator": "sap.ui.rta.command",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.108.0",
+		"sourceChangeFileName": "",
+		"compositeCommand": "",
+		"command": "property"
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

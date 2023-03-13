@@ -1,0 +1,53 @@
+{
+	"fileName": "id_1668055363993_148_addFields",
+	"fileType": "change",
+	"changeType": "addFields",
+	"moduleName": "",
+	"reference": "customer.z.mdm.cmd.supplier.ops1.a1",
+	"packageName": "$TMP",
+	"content": {
+		"field": {
+			"value": ["CreatedByUser"],
+			"valueProperty": ["value"],
+			"selector": {
+				"id": "mdm.cmd.supplier.ops1::sap.suite.ui.generic.template.ObjectPage.view.Details::C_SupplierFs--id-1668055326234-140_C_SupplierFsType_CreatedByUser",
+				"idIsLocal": false
+			},
+			"jsTypes": ["sap.ui.comp.smartfield.SmartField"],
+			"index": 0
+		}
+	},
+	"selector": {
+		"id": "mdm.cmd.supplier.ops1::sap.suite.ui.generic.template.ObjectPage.view.Details::C_SupplierFs--id-1668055326234-140",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/mdm.cmd.supplier.ops1/changes/",
+	"projectId": "customer.z.mdm.cmd.supplier.ops1.a1",
+	"creation": "2022-11-10T04:42:46.820Z",
+	"originalLanguage": "EN",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.84.19",
+		"sourceChangeFileName": "",
+		"compositeCommand": "id_1668055363973_145_composite",
+		"command": "addDelegateProperty"
+	},
+	"oDataInformation": {
+		"oDataServiceUri": "/sap/opu/odata/sap/C_SUPPLIER_FS_SRV/",
+		"propertyName": "CreatedByUser",
+		"entityType": "C_SupplierFsType"
+	},
+	"dependentSelector": {
+		"form": {
+			"id": "mdm.cmd.supplier.ops1::sap.suite.ui.generic.template.ObjectPage.view.Details::C_SupplierFs--7413::Form",
+			"idIsLocal": false
+		}
+	},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

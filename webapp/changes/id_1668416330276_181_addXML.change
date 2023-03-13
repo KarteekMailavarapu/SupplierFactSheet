@@ -1,0 +1,37 @@
+{
+	"fileName": "id_1668416330276_181_addXML",
+	"fileType": "change",
+	"changeType": "addXML",
+	"moduleName": "customer/z/mdm/cmd/supplier/ops1/a1/changes/fragments/smartTablePurchOrgs.fragment.xml",
+	"reference": "customer.z.mdm.cmd.supplier.ops1.a1",
+	"packageName": "$TMP",
+	"content": {
+		"targetAggregation": "blocks",
+		"index": 2,
+		"fragmentPath": "fragments/smartTablePurchOrgs.fragment.xml"
+	},
+	"selector": {
+		"id": "mdm.cmd.supplier.ops1::sap.suite.ui.generic.template.ObjectPage.view.Details::C_SupplierFs--49613::SubSection",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/mdm.cmd.supplier.ops1/changes/",
+	"projectId": "customer.z.mdm.cmd.supplier.ops1.a1",
+	"creation": "2022-11-14T08:58:50.918Z",
+	"originalLanguage": "EN",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.84.19",
+		"sourceChangeFileName": "",
+		"compositeCommand": "",
+		"command": "addXML"
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

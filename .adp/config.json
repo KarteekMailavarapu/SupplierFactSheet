@@ -1,0 +1,11 @@
+{
+  "componentname": "mdm.cmd.supplier.ops1",
+  "safeMode": false,
+  "appvariant": "z.mdm.cmd.supplier.ops1.a1",
+  "layer": "CUSTOMER_BASE",
+  "sourceSystem": "NWD-HANA",
+  "isOVPApp": false,
+  "isFioriElement": true,
+  "environment": "ABAP",
+  "ui5Version": "1.108.0"
+}
